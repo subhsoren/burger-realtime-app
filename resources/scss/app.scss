@@ -1,0 +1,77 @@
+@import "./variables";
+@import '~noty/src/noty.scss';
+@import '~noty/src/themes/mint.scss';
+
+body {
+  font-family: "Lato", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: $dark;
+}
+nav .logo {
+  width: 50px;
+}
+nav li:last-child a {
+  background: $primary-color;
+  &:hover {
+    background: $primary-color-hover;
+  }
+}
+nav li a {
+  transition: $smooth;
+  -webkit-transition: $smooth;
+  -moz-transition: $smooth;
+  -ms-transition: $smooth;
+  -o-transition: $smooth;
+  &:hover {
+    color: $primary-color;
+  }
+}
+section.hero {
+  background: $secondary-color;
+}
+.add-to-cart {
+  border: 2px solid $primary-color;
+  color: $primary-color;
+  transition: $smooth;
+  -webkit-transition: $smooth;
+  -moz-transition: $smooth;
+  -ms-transition: $smooth;
+  -o-transition: $smooth;
+  &:hover {
+    background: $primary-color;
+    border: 2px solid $pure;
+    color: $pure;
+  }
+}
+.btn-primary {
+  background: $primary-color;
+  transition: $smooth;
+  -webkit-transition: $smooth;
+  -moz-transition: $smooth;
+  -ms-transition: $smooth;
+  -o-transition: $smooth;
+  &:hover {
+    background: $primary-color-hover;
+  }
+}
+section.cart {
+  background: $secondary-color;
+  .amount {
+    color: $primary-color;
+  }
+}
+section .login {
+  background: $secondary-color;
+  .text-sm .font-medium {
+    color: $primary-color;
+  }
+}
+
+.noty_theme__mint{
+  border-radius: 50px !important;
+  padding-left: 8px !important;
+}
+button:focus{
+  outline: none;
+
+}
