@@ -356,3 +356,7 @@ section .login .text-sm .font-medium {
 button:focus {
   outline: none;
 }
+
+a.link {
+  color: #e67e22;
+}
